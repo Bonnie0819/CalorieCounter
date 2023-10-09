@@ -10,60 +10,52 @@
 </head>
 
 <!--Calorie Counter Project-->
-<body>
+<body onload = "initialize();">
     <h1>Calorie Counter</h1>
     <!--Information on Appetizer-->
     <h3>Appetizer: </h3>
         <!--Buttons used to change values in Appetizer-->
-        <div class="Appetizer">
-            <button>Add Protein</button>
-            <button>Subtract Protein</button>
-            <button>Add Carbs</button>
-            <button>Subtract Carbs</button>
-            <button>Add Fats</button>
-            <button>Subtract Fats</button>
-        </div>
-
+        <button onclick = "addProtein('Appetizer');">Add Protein</button>
+        <button onclick = "subtractProtein('Appetizer');">Subtract Protein</button>
+        <button onclick = "addCarbs('Appetizer');">Add Carbs</button>
+        <button onclick = "subtractCarbs('Appetizer');">Subtract Carbs</button>
+        <button onclick = "addFats('Appetizer');">Add Fats</button>
+        <button onclick = "subtractFats('Appetizer');">Subtract Fats</button>
         <!--Prints out the information about the Appetizer-->
         <p id="proteinA">Protein:</p>
         <p id="carbsA">Carbs:</p>
         <p id="fatsA">Fats:</p>
         <p id="caloriesA">Calories:</p>
-
+        
     <!--Information on Entree-->
     <h3>Entree: </h3>
         <!--Buttons used to change values in Entree-->
-        <div class="Entree">
-            <button>Add Protein</button>
-            <button>Subtract Protein</button>
-            <button>Add Carbs</button>
-            <button>Subtract Carbs</button>
-            <button>Add Fats</button>
-            <button>Subtract Fats</button>
-        </div>
-
+        <button onclick = "addProtein('Entree');">Add Protein</button>
+        <button onclick = "subtractProtein('Entree');">Subtract Protein</button>
+        <button onclick = "addCarbs('Entree');">Add Carbs</button>
+        <button onclick = "subtractCarbs('Entree');">Subtract Carbs</button>
+        <button onclick = "addFats('Entree');">Add Fats</button>
+        <button onclick = "subtractFats('Entree');">Subtract Fats</button>
         <!--Prints out the information about the Entree-->
         <p id="proteinB">Protein:</p>
         <p id="carbsB">Carbs:</p>
         <p id="fatsB">Fats:</p>
         <p id="caloriesB">Calories:</p>
-    
+
     <!--Information on Dessert-->
     <h3>Dessert: </h3>
-        <!--Buttons used to change values in Dessert-->
-        <div class="Dessert">
-            <button>Add Protein</button>
-            <button>Subtract Protein</button>
-            <button>Add Carbs</button>
-            <button>Subtract Carbs</button>
-            <button>Add Fats</button>
-            <button>Subtract Fats</button>
-        </div>
-
-        <!--Prints out the information about the Dessert-->
+        <!--Buttons used to change values in Entree-->
+        <button onclick = "addProtein('Dessert');">Add Protein</button>
+        <button onclick = "subtractProtein('Dessert');">Subtract Protein</button>
+        <button onclick = "addCarbs('Dessert');">Add Carbs</button>
+        <button onclick = "subtractCarbs('Dessert');">Subtract Carbs</button>
+        <button onclick = "addFats('Dessert');">Add Fats</button>
+        <button onclick = "subtractFats('Dessert');">Subtract Fats</button>
+        <!--Prints out the information about the Entree-->
         <p id="proteinC">Protein:</p>
         <p id="carbsC">Carbs:</p>
         <p id="fatsC">Fats:</p>
         <p id="caloriesC">Calories:</p>
+    <h3 id="total">Total Calories of the meal:</h3>
 </body>
 </html>
