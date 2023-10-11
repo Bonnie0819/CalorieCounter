@@ -101,6 +101,21 @@ function updateCalories() {
     dessertCalories = ((dessertFats * 9) + (dessertCarbs * 4) + (dessertProtein * 4));
     totalCalories = appetizerCalories + entreeCalories + dessertCalories;
 }
+function reset() {
+    appetizerCarbs = 0;
+    appetizerFats = 0;
+    appetizerProtein = 0;
+    appetizerCalories = 0;
+    entreeCarbs = 0;
+    entreeFats = 0;
+    entreeProtein = 0;
+    entreeCalories = 0;
+    dessertCarbs = 0;
+    dessertFats = 0;
+    dessertProtein = 0;
+    dessertCalories = 0;
+    display();
+}
 
 function display() {
     updateCalories();
